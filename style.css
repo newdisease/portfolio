@@ -1,6 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  min-width: 960px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -11,21 +14,34 @@ body {
   background-position: top center;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 928px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
+.container--wide {
+  max-width: 1408px;
+}
+
+.contacts-info-row {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .page-header {
   margin: 0 0 180px;
   padding: 32px 0 32px;
-}
-
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
-  text-align: right;
 }
 
 .page-header a {
@@ -34,6 +50,7 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+  white-space: nowrap;
 }
 
 .header-email {
@@ -48,11 +65,6 @@ body {
 
 .hero-image {
   margin-bottom: 480px;
-}
-
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
 }
 
 .heading {
@@ -186,4 +198,13 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+@media (max-width: 576px) {
+  .contacts-info-row {
+    justify-content: center;
+  }
+  .page-header a {
+    margin: 0 20px;
+  }
 }
