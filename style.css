@@ -70,12 +70,12 @@ img {
 .heading {
   margin: 0 0 24px;
   font-size: 80px;
-  line-height: 96px;
+  line-height: 1.2;
 }
 
-.hero-image p {
-  margin: 0;
+.heading-sm {
   font-size: 32px;
+  margin: 0;
   line-height: 48px;
 }
 
@@ -175,6 +175,7 @@ img {
   border-radius: 4px;
   background-color: #712073;
   color: #ffffff;
+  margin: 20px 0;
 }
 
 .page-footer {
@@ -204,7 +205,27 @@ img {
   .contacts-info-row {
     justify-content: center;
   }
+
   .page-header a {
     margin: 0 20px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+  .heading-sm {
+    font-size: 25px;
+  }
+
+  .subheading {
+    font-size: 35px;
+  }
+
+  .button {
+    padding: 15px 50px;
+  }
+
+  .hero-image {
+    margin-bottom: 300px;
   }
 }
